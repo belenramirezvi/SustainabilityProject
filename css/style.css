@@ -1,0 +1,74 @@
+nav {
+    background: rgb(95, 179, 164);
+    margin: 0px;
+    padding: 40px;
+    display: flex;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  ul li {
+    display: inline;
+    text-decoration: none;
+  }
+  ul li a {
+    text-decoration: none;
+  }
+
+.container {
+    text-align: right;
+    margin: 0px;
+    background-image: url(https://th.bing.com/th/id/OIP.kgaY38fjwrH915w8eH-coQHaE3?pid=ImgDet&rs=1);
+    background-repeat: no-repeat;
+    margin: 0px;
+    background-attachment: scroll;
+    background-size: cover;
+}
+#darkMode {
+    text-align: right;
+    align-items: right;
+}
+.site-navbar .site-navigation .site-menu .active>a span {
+    background: #007bff;
+    color: #fff;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 5px 20px;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    border-color: green;
+    background-color: green !important;
+  }
+
+footer {
+    display: flex;  /* allows use of "justify-content" property */
+    justify-content: center;  /* horizontally centers the contents (the social icons) */
+    background-color: rgb(219, 219, 219);
+    height: 100px;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+  }
+  
+footer a {
+    margin: 5px;
+    text-decoration: none!important;
+}
+
+.social-icon {
+    display: inline-flex;  /* allows use of "justify-content" and "align-items" properties */
+    width: 50px;
+    height: 50px;  
+    color: #666;
+    background-color: white;
+    justify-content: center;  /* horizontally centers the contents (the FontAwesome icon) */
+    align-items: center;  /* vertically centers the contents (the FontAwesome icon) */
+    border-radius: 50%;  /* makes it round (circle if width and height are the same) */
+}
+
+.social-icon:hover {
+    color: #222;  /* change color when hover over the link */
+}
