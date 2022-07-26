@@ -1,74 +1,281 @@
-nav {
-    background: rgb(95, 179, 164);
-    margin: 0px;
-    padding: 40px;
-    display: flex;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  ul li {
-    display: inline;
-    text-decoration: none;
-  }
-  ul li a {
-    text-decoration: none;
-  }
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
-.container {
-    text-align: right;
-    margin: 0px;
-    background-image: url(https://th.bing.com/th/id/OIP.kgaY38fjwrH915w8eH-coQHaE3?pid=ImgDet&rs=1);
-    background-repeat: no-repeat;
-    margin: 0px;
-    background-attachment: scroll;
-    background-size: cover;
+body{
+	font-family: 'Roboto', sans-serif;
+	transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+/*Header*/
+
+.navbar-logo{
+	padding: 15px;
+	color: #fff;
+}
+.navbar-mainbg{
+	background-color:teal;
+	padding: 0px;
+}
+#navbarSupportedContent{
+	overflow: hidden;
+	position: relative;
+}
+#navbarSupportedContent ul{
+	padding: 0px;
+	margin: 0px;
+}
+#navbarSupportedContent ul li a i{
+	margin-right: 10px;
+}
+#navbarSupportedContent li {
+	list-style-type: none;
+	float: left;
+}
+#navbarSupportedContent ul li a{
+	color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    padding: 20px 20px;
+    transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+}
+#navbarSupportedContent>ul>li.active>a{
+	color:teal;
+	background-color: transparent;
+	transition: all 0.7s;
+}
+#navbarSupportedContent a:not(:only-child):after {
+	content: "\f105";
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	font-size: 14px;
+	font-family: "Font Awesome 5 Free";
+	display: inline-block;
+	padding-right: 3px;
+	vertical-align: middle;
+	font-weight: 900;
+	transition: 0.5s;
+}
+#navbarSupportedContent .active>a:not(:only-child):after {
+	transform: rotate(90deg);
+}
+.hori-selector{
+	display:inline-block;
+	position:absolute;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	background-color: #fff;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	margin-top: 10px;
+}
+.hori-selector .right,
+.hori-selector .left{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-color: #fff;
+	bottom: 10px;
+	transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.hori-selector .right{
+	right: -25px;
+}
+.hori-selector .left{
+	left: -25px;
+}
+.hori-selector .right:before,
+.hori-selector .left:before{
+	content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:teal;
+}
+.hori-selector .right:before{
+	bottom: 0;
+    right: -25px;
+}
+.hori-selector .left:before{
+	bottom: 0;
+    left: -25px;
+}
+
 #darkMode {
     text-align: right;
     align-items: right;
-}
-.site-navbar .site-navigation .site-menu .active>a span {
-    background: #007bff;
-    color: #fff;
-    border-radius: 30px;
-    display: inline-block;
-    padding: 5px 20px;
+	padding-right: 1%;
+	color: teal;
 }
 .custom-control-input:checked~.custom-control-label::before {
-    border-color: green;
-    background-color: green !important;
+    border-color: teal;
+    background-color: teal !important;
   }
 
+
+/*End Header*/
+
+
+
+
+
+/*Dark mode on*/
+body.dark-mode {
+    background: black;
+	transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.dark-mode label {
+    color: white;
+}
+.dark-mode .hori-selector{ 
+	
+	background-color: black;
+}
+.dark-mode .hori-selector .right,
+.dark-mode .hori-selector .left{
+	transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	background-color: black;
+}
+
+.dark-mode .social-icon {
+	transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	color: #fff;
+	background-color: black;
+
+}
+.dark-mode .social-icon:hover {
+    color: teal;  
+} 
+.dark-mode #navbarSupportedContent>ul>li.active>a{
+	color:#fff;
+	background-color: transparent;
+	transition: all 0.7s;
+}
+
+
+@media(min-width: 992px){
+	.navbar-expand-custom {
+	    -ms-flex-flow: row nowrap;
+	    flex-flow: row nowrap;
+	    -ms-flex-pack: start;
+	    justify-content: flex-start;
+	}
+	.navbar-expand-custom .navbar-nav {
+	    -ms-flex-direction: row;
+	    flex-direction: row;
+	}
+	.navbar-expand-custom .navbar-toggler {
+	    display: none;
+	}
+	.navbar-expand-custom .navbar-collapse {
+	    display: -ms-flexbox!important;
+	    display: flex!important;
+	    -ms-flex-preferred-size: auto;
+	    flex-basis: auto;
+	}
+}
+
+
+
+@media (max-width: 991px){
+	#navbarSupportedContent ul li a{
+		padding: 12px 30px;
+	}
+	.hori-selector{
+		margin-top: 0px;
+		margin-left: 10px;
+		border-radius: 0;
+		border-top-left-radius: 25px;
+		border-bottom-left-radius: 25px;
+	}
+	.hori-selector .left,
+	.hori-selector .right{
+		right: 10px;
+	}
+	.hori-selector .left{
+		top: -25px;
+		left: auto;
+	}
+	.hori-selector .right{
+		bottom: -25px;
+	}
+	.hori-selector .left:before{
+		left: -25px;
+		top: -25px;
+	}
+	.hori-selector .right:before{
+		bottom: -25px;
+		left: -25px;
+	}
+}
 footer {
-    display: flex;  /* allows use of "justify-content" property */
     justify-content: center;  /* horizontally centers the contents (the social icons) */
     background-color: rgb(219, 219, 219);
-    height: 100px;
-    padding: 20px;
+    padding: 20px 0px 10px 0px;
+    position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
-    position: absolute;
   }
   
-footer a {
+footer div a {
     margin: 5px;
     text-decoration: none!important;
 }
 
+.iconsMap {
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+.mapDirection {
+  padding: 0px 20px 0px 10px;
+  text-align: left;
+  font-size: small;
+
+}
+.footerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+}
 .social-icon {
     display: inline-flex;  /* allows use of "justify-content" and "align-items" properties */
     width: 50px;
     height: 50px;  
     color: #666;
     background-color: white;
-    justify-content: center;  /* horizontally centers the contents (the FontAwesome icon) */
+	justify-content: center;  /* horizontally centers the contents (the FontAwesome icon) */
     align-items: center;  /* vertically centers the contents (the FontAwesome icon) */
     border-radius: 50%;  /* makes it round (circle if width and height are the same) */
 }
 
 .social-icon:hover {
     color: #222;  /* change color when hover over the link */
+}
+
+.copyright {
+  padding: 20px 0px 0px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+  justify-content: center;
+  font-size: x-small;
 }
