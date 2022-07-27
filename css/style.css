@@ -228,9 +228,10 @@ footer {
     justify-content: center;  /* horizontally centers the contents (the social icons) */
     background-color: rgb(219, 219, 219);
     padding: 20px 0px 10px 0px;
-    left: 0;
-    bottom: 0px;
+    left: 0px;
+    bottom: 0px!important;
     width: 100%;
+	display: flex;
   }
   
 footer div a {
