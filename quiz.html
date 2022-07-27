@@ -1,0 +1,156 @@
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Awesome Quiz App | CodingNepal</title> -->
+    <!-- FontAweome CDN Link for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'>
+    
+    <link rel="stylesheet" href="./css/quiz.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <!-- partial:index.partial.html -->
+        <nav class="navbar navbar-expand-custom navbar-mainbg">
+            <a class="navbar-brand navbar-logo" href="javascript:void(0);"></i>  Sustainability</a>
+            <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" href="javascript:void(0);"><i class="fas fa-home"></i>HomePage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="calculate_emissions.html" class="nav-link" href="javascript:void(0);"><i class="fas fa-recycle"></i>Calculate your emissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"><i class="fas fa-arrow-down"></i>Reduce your Carbon Footprint</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);"><i class="fas fa-map"></i>Map</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="quiz.html" class="nav-link" href="javascript:void(0);"><i class="fa fa-cubes"></i>Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link" href="javascript:void(0);"><i class="fa fa-paper-plane"></i>Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    <!-- Dark mode switch-->
+        <div class="custom-control custom-switch" id="darkMode">
+            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+            <label class="custom-control-label" for="customSwitch1">Dark mode</label>
+        </div>
+    </header>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Sustainability Quiz</div>
+            <div class="timer" id="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next Question</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="answered_questions">
+            <!-- from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+    <footer>
+		<div class="iconsMap">
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d620.7768989168559!2d-0.0823071!3d51.511241999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487603550f063355%3A0xcff54fed5e08a9d1!2sAccenture!5e0!3m2!1sen!2suk!4v1658259605861!5m2!1sen!2suk" width="200" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+			</div>
+			<div>
+				<p class="mapDirection"> Find us: <br> 30 Fenchurch street <br> London</p>
+			</div>
+			<div class="footerLinks">
+				<a href="https://gmail.com" target="_blank">
+					<span class='social-icon'><i class="fa fa-envelope"></i></span>
+				</a>
+				<a href="https://instagram.com" target="_blank">
+					<span class='social-icon'><i class="fab fa-instagram"></i></span>
+				</a>
+				<a href="https://facebook.com" target="_blank">
+					<span class='social-icon'><i class="fab fa-facebook-f"></i></span>
+				</a>
+				<a href="https://twitter.com" target="_blank">
+					<span class='social-icon'><i class="fab fa-twitter"></i></span>
+				</a>
+			</div>
+		</div>
+		
+		<!-- Copyright -->
+		<div class="copyright">
+			<p>&copy; 2021 Copyright. All rights reserved</p>
+		</div>
+	<!-- Copyright -->
+	
+	</footer>
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script><script  src="./js/script.js"></script>
+    <script src="./js/questions.js"></script> 
+
+    <script src="./js/script_quiz.js"></script> 
+
+</body>
+</html>

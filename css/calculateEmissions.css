@@ -81,6 +81,7 @@ fieldset {
 
 .main-page-grid .form-fields i {
     font-size: 250%;
+    margin: auto auto;
 }
 
 .main-page-grid .entry {
@@ -88,4 +89,6 @@ fieldset {
     border: 1px solid teal;
     border-radius: 5px;
     padding: 2%;
+    margin: auto auto;
+    width: 80%;
 }
