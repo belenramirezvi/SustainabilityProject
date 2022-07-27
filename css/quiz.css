@@ -11,6 +11,10 @@ body{
     background: #fff;
 }
 
+.background_image img {
+    width: 100%;
+}
+
 ::selection{
     color: #fff;
     background: #007bff;
@@ -323,7 +327,7 @@ section .option_list .option.disabled{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    transform: translate(-50%, -50%) scale(0.9);
+    transform: translate(-50%, -10%) scale(0.9);
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;

@@ -1,30 +1,15 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 
 
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
-@font-face {
+/* @font-face {
   font-family: Montserrat-Regular;
   src: url('../fonts/montserrat/Montserrat-Regular.ttf'); 
-}
-
-@font-face {
-  font-family: Montserrat-Bold;
-  src: url('../fonts/montserrat/Montserrat-Bold.ttf'); 
-}
-
-@font-face {
-  font-family: Montserrat-ExtraBold;
-  src: url('../fonts/montserrat/Montserrat-ExtraBold.ttf'); 
-}
-
-@font-face {
-  font-family: Montserrat-Medium;
-  src: url('../fonts/montserrat/Montserrat-Medium.ttf'); 
-}
-
+} */
 
 
 /*//////////////////////////////////////////////////////////////////
@@ -38,12 +23,11 @@
 
 body, html {
 	height: 100%;
-	font-family: Montserrat-Regular, sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Montserrat-Regular;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -68,8 +52,7 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 0px;
 }
 
-p {
-	font-family: Montserrat-Regular;
+.iconsmap p {
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -144,6 +127,11 @@ iframe {
   align-items: center;
 }
 
+.dark-mode .contact1 {
+  transition-duration: 2s;
+  background: black;
+}
+
 .container-contact1 {
   background: teal;
   width: 1163px;
@@ -182,7 +170,6 @@ iframe {
 
 .contact1-form-title {
   display: block;
-  font-family: Montserrat-ExtraBold;
   font-size: 24px;
   color: #333333;
   line-height: 1.2;
@@ -220,7 +207,6 @@ textarea.input1 + .shadow-input1 {
   display: block;
   width: 100%;
   background: #e6e6e6;
-  font-family: Montserrat-Bold;
   font-size: 15px;
   line-height: 1.5;
   color: #666666;
@@ -274,7 +260,6 @@ textarea.input1 + .shadow-input1 {
   height: 50px;
   border-radius: 25px;
   background: #57b846;
-  font-family: Montserrat-Bold;
   font-size: 15px;
   line-height: 1.5;
   color: #fff;
@@ -389,7 +374,6 @@ textarea.input1 + .shadow-input1 {
   right: 8px;
   pointer-events: none;
 
-  font-family: Montserrat-Medium;
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
