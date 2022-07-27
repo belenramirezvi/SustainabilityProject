@@ -1,0 +1,91 @@
+h1{
+    text-align: center;
+}
+
+.grid-row {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.form-inline {
+    /*display: inline-block;*/
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.557);
+}
+
+input {
+    width: 40%;
+}
+
+.cell {
+    justify-content: right;
+}
+
+#submit-button {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #04acac;
+    border: none;
+    border-radius: 5px;
+    height: 10%;
+    width: 20%;
+    padding: 1%;
+    font-size: large;
+    cursor: pointer;
+}
+
+fieldset {
+    width: 50%;
+    height: 100%;
+    border: none;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-page-grid {
+    display: grid;
+    grid-template-areas:
+        'form-fields' 
+        'calculate-button' 
+        'results';
+    grid-template-columns: 100%;
+    padding-bottom: 2%;
+    row-gap: 2%;
+    align-items: center;
+}
+
+.main-page-grid .form-fields {
+    grid-area: form-fields;
+    width: 100%;
+    justify-content: center;
+}
+
+.main-page-grid .calculate-button {
+    grid-area: calculate-button;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-page-grid .results {
+    grid-area: results;
+    text-align: center;
+    font-size: larger;
+    margin-bottom: 2%;
+}
+.main-page-grid .results i {
+    font-size: 1000%;
+}
+
+
+.main-page-grid .form-fields i {
+    font-size: 250%;
+}
+
+.main-page-grid .entry {
+    background-color: #04acac;
+    border: 1px solid teal;
+    border-radius: 5px;
+    padding: 2%;
+}
