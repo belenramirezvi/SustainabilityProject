@@ -94,3 +94,11 @@ fieldset {
     margin: auto auto;
     width: 80%;
 }
+
+.dark-mode h1 {
+    color: #fff;
+}
+
+.dark-mode label {
+    color: black;
+}

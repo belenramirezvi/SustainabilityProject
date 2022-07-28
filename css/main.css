@@ -115,8 +115,6 @@ iframe {
   width: 100%;
   min-height: 100%;
   padding: 15px;
-  background: #fff;
-
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -125,11 +123,6 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
-
-.dark-mode .contact1 {
-  transition-duration: 2s;
-  background: black;
 }
 
 .container-contact1 {
