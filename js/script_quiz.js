@@ -159,35 +159,35 @@ function showResult(){
     quiz_box.classList.remove("activeQuiz"); //hide quiz box
     result_box.classList.add("activeResult"); //show result box
     const scoreText = result_box.querySelector(".score_text");
-    if (userScore > 3){ // if user scored more than 3
+    if (userScore > 7){ // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
-        let scoreTag = '<span>and congrats! , You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        let scoreTag = '<span>Congratulations! You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p> questions right! </span>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
     }
-    else if(userScore > 1){ // if user scored more than 1
-        let scoreTag = '<span>and nice , You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+    else if(userScore > 4){ // if user scored more than 1
+        let scoreTag = '<span>You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p> questions right! </span>';
         scoreText.innerHTML = scoreTag;
     }
-    else{ // if user scored less than 1
-        let scoreTag = '<span>and sorry , You got only <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+    else{ //
+        let scoreTag = '<span>Sorry, you got only <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p> questions right.</span>';
         scoreText.innerHTML = scoreTag;
     }
 
 
-    let que_tag = '';
-    let asw_question = '';
-    for(i = 0; i < questions.length; i++){
-        que_tag = '<span>'+ questions[i].numb + ". " + questions[i].question +'</span>';
-        if(ansCorrect[i]){
-            asw_question += '<div class="question">' + que_tag + '<div class="option correct"><span>'+ userAnswers[i] + tickIconTag + '</span></div></div><br>';
-        }
-        else{
-            asw_question += '<div class="question">' + que_tag + '<div class="option incorrect"><span>'+ userAnswers[i] + crossIconTag + '</span></div></div><br>';
+    // let que_tag = '';
+    // let asw_question = '';
+    // for(i = 0; i < questions.length; i++){
+    //     que_tag = '<span>'+ questions[i].numb + ". " + questions[i].question +'</span>';
+    //     if(ansCorrect[i]){
+    //         asw_question += '<div class="question">' + que_tag + '<div class="option correct"><span>'+ userAnswers[i] + tickIconTag + '</span></div></div><br>';
+    //     }
+    //     else{
+    //         asw_question += '<div class="question">' + que_tag + '<div class="option incorrect"><span>'+ userAnswers[i] + crossIconTag + '</span></div></div><br>';
 
-        }
+    //     }
             
-    } 
-    answered_questions.innerHTML = asw_question;
+    // } 
+    // answered_questions.innerHTML = asw_question;
     
 }
 

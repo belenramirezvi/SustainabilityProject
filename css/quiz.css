@@ -342,6 +342,7 @@ section .option_list .option.disabled{
 .result_box .complete_text{
     font-size: 20px;
     font-weight: 500;
+    margin-top: 5%;
 }
 
 .result_box .score_text span{

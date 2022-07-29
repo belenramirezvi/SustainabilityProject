@@ -2,71 +2,79 @@
 let questions = [
     {
     numb: 1,
-    question: "What does HTML stand for?",
-    answer: "Hyper Text Markup Language",
+    question: "By which year does Accenture want to achieve a net zero carbon emission?",
+    answer: "2025",
     options: [
-      "Hyper Text Preprocessor",
-      "Hyper Text Markup Language",
-      "Hyper Text Multiple Language",
-      "Hyper Tool Multi Language"
+      "2025",
+      "2030",
+      "2035",
+      "2050"
     ]
   },
     {
     numb: 2,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
+    question: "What are the top three countries producing the most carbon dioxide?",
+    answer: "USA, China, Russia",
     options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
+      "Russia, India, UK",
+      "USA, China, Russia",
+      "Australia, Ecuador, Philippines",
+      "Italy, Brunei, Madagascar"
     ]
   },
     {
     numb: 3,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
+    question: "What source causes the most carbon emissions?",
+    answer: "Transportation",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+      "Agriculture",
+      "Electricity production",
+      "Transportation",
+      "Land use and forestry"
     ]
   },
     {
     numb: 4,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: "What does carbon emissions mean?",
+    answer: "Carbon dioxide emitted when fossil fuels are burned in vehicles and industrial processes",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "The carbon dioxide that is stored in your house",
+      "Non-green house gas released into the atmosphere",
+      "Carbon dioxide emitted when fossil fuels are burned in vehicles and industrial processes",
+      "The pure carbon released into the atmosphere"
     ]
   },
     {
     numb: 5,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
+    question: "When working out either in the morning or later in the evening which option below would have the smallest impact on the environment?",
+    answer: "Exercising outdoors",
     options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
+      "Exercising outdoors",
+      "Going to the gym",
+      "Running on a treadmill at home",
+      "Putting on a short exercise video"
     ]
   },
-  // you can uncomment the below codes and make duplicate as more as you want to add question
-  // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9.....
-
-  //   {
-  //   numb: 6,
-  //   question: "Your Question is Here",
-  //   answer: "Correct answer of the question is here",
-  //   options: [
-  //     "Option 1",
-  //     "option 2",
-  //     "option 3",
-  //     "option 4"
-  //   ]
-  // },
+    {
+    numb: 6,
+    question: "Your Question is Here",
+    answer: "Correct answer of the question is here",
+    options: [
+      "Option 1",
+      "option 2",
+      "option 3",
+      "option 4"
+    ]
+  },
+  {
+    numb: 7,
+    question: "Your Question is Here",
+    answer: "Correct answer of the question is here",
+    options: [
+      "Option 1",
+      "option 2",
+      "option 3",
+      "option 4"
+    ]
+  },
 ];
