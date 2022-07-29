@@ -29,8 +29,9 @@ let questions = [
     options: [
       "Agriculture",
       "Electricity production",
-      "Transportation",
-      "Land use and forestry"
+      "Land use and forestry",
+      "Transportation"
+      
     ]
   },
     {
@@ -57,6 +58,28 @@ let questions = [
   },
     {
     numb: 6,
+    question: "How many sustainability development goals (SDGs) are there?",
+    answer: "17",
+    options: [
+      "10",
+      "12",
+      "17",
+      "25"
+    ]
+  },
+  {
+    numb: 7,
+    question: "Which of the following is considered the least sustainable option when traveling?",
+    answer: "Planes",
+    options: [
+      "Bikes",
+      "Electric vehicles",
+      "Public transportation",
+      "Planes"
+    ]
+  },
+  {
+    numb: 8,
     question: "Your Question is Here",
     answer: "Correct answer of the question is here",
     options: [
@@ -67,14 +90,25 @@ let questions = [
     ]
   },
   {
-    numb: 7,
-    question: "Your Question is Here",
-    answer: "Correct answer of the question is here",
+    numb: 9,
+    question: "What is the least carbon intensive way to go to the office?",
+    answer: "Take the public bus",
     options: [
-      "Option 1",
-      "option 2",
-      "option 3",
-      "option 4"
+      "Drive a car",
+      "Take the public bus",
+      "Rent an electric scooter",
+      "Rent a dock-less bike"
+    ]
+  },
+  {
+    numb: 10,
+    question: "What is the main what is one of the main concerns of carbon emissions?",
+    answer: "Increase in the temperature which leads to global warming",
+    options: [
+      "Decrease in the global temperature",
+      "The atmosphere becomes cleaner",
+      "The air is less polluted",
+      "Increase in the temperature which leads to global warming"
     ]
   },
 ];
